@@ -10,7 +10,6 @@ namespace enigma {
     bool ext_swapcontrol_supported;
 
     void investigate_swapcontrol_support() {
-
       if (has_checked_extensions) return; // Already calculated, no need to calculate it more.
 
       const char *wgl_extensions = wglGetExtensionsStringARB(window_hDC);
